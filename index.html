@@ -1,125 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
 </head>
 <body>
-    <!-- Header Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-left">
-                <a href="#" class="nav-link">About</a>
-                <a href="#" class="nav-link">Store</a>
-            </div>
-            <div class="nav-right">
-                <a href="#" class="nav-link">Gmail</a>
-                <a href="#" class="nav-link">Images</a>
-                <div class="apps-menu">
-                    <svg class="apps-icon" focusable="false" viewBox="0 0 24 24">
-                        <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
-                    </svg>
-                </div>
-                <div class="profile-pic">
-                    <img src="https://lh3.googleusercontent.com/ogw/AF2bZyh_h7o-0zV8Ky8Oa8_8XdVGVONQKm5vGzLjg-vL=s32-c-mo" alt="Profile" class="profile-image">
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <div class="nav-left">
+            <a href="#">About</a>
+            <a href="#">Store</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <a href="#">Sign in</a>
+        </div>
+    </div>
 
     <!-- Main Content -->
-    <main class="main">
+    <div class="main-content">
         <!-- Google Logo -->
-        <div class="logo-container">
-            <svg class="google-logo" viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#EA4335" d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/>
-                <path fill="#FBBC05" d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/>
-                <path fill="#EA4335" d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"/>
-                <path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"/>
-                <path fill="#EA4335" d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"/>
-                <path fill="#FBBC05" d="M35.29 41v8.96h20.67c-.85 4.54-3.36 7.9-7.14 10.34v8.56h11.55c6.76-6.22 10.65-15.38 10.65-26.27 0-2.52-.22-4.95-.65-7.32H35.29z"/>
-                <path fill="#EA4335" d="M35.29 68.2c9.66 0 17.73-3.19 23.64-8.64l-11.55-8.56c-3.19 2.18-7.31 3.44-12.09 3.44-9.32 0-17.22-6.3-20.04-14.77H3.47v8.81C9.46 58.56 21.39 68.2 35.29 68.2z"/>
-                <path fill="#34A853" d="M15.25 40.67c-.71-2.18-1.13-4.54-1.13-6.97s.42-4.79 1.13-6.97v-8.81H3.47C1.26 22.15 0 28.88 0 36.7s1.26 14.55 3.47 18.78l11.78-8.81z"/>
-                <path fill="#FBBC05" d="M35.29 14.2c5.25 0 9.99 1.8 13.73 5.34l10.26-10.26C53.02 3.61 44.95 0 35.29 0 21.39 0 9.46 9.64 3.47 23.92l11.78 8.81c2.82-8.47 10.72-14.77 20.04-14.77z"/>
-            </svg>
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
         </div>
 
-        <!-- Search Container -->
+        <!-- Search Box -->
         <div class="search-container">
-            <div class="search-box">
-                <div class="search-icon">
-                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                    </svg>
-                </div>
-                <input type="text" class="search-input" maxlength="2048" name="q" value="" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" role="combobox" spellcheck="false" title="Search">
-                <div class="voice-search">
-                    <svg class="voice-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path>
-                        <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
-                        <path fill="#fbbc04" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path>
-                        <path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path>
-                    </svg>
-                </div>
-                <div class="camera-search">
-                    <svg class="camera-icon" focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
-                        <rect fill="none" height="192" width="192"></rect>
-                        <g>
-                            <circle fill="#34a853" cx="144.07" cy="144" r="16"></circle>
-                            <circle fill="#4285f4" cx="96.07" cy="104" r="24"></circle>
-                            <path fill="#ea4335" d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z"></path>
-                            <path fill="#fbbc04" d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z"></path>
-                            <path fill="#4285f4" d="M112,24l-32,0L68,40H56.8C38.69,40,24,54.69,24,72.8V92h16V74c0-9.71,7.2-18,16-18h80L112,24z"></path>
-                        </g>
-                    </svg>
-                </div>
-            </div>
+            <input type="text" class="search-box" placeholder="">
         </div>
 
-        <!-- Search Buttons -->
-        <div class="search-buttons">
-            <button class="search-btn">Google Search</button>
-            <button class="lucky-btn">I'm Feeling Lucky</button>
+        <!-- Buttons -->
+        <div class="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
         </div>
 
-        <!-- Language Links -->
-        <div class="language-section">
-            <span class="offered-text">Google offered in:</span>
-            <a href="#" class="lang-link">हिन्दी</a>
-            <a href="#" class="lang-link">বাংলা</a>
-            <a href="#" class="lang-link">తెలుగు</a>
-            <a href="#" class="lang-link">मराठी</a>
-            <a href="#" class="lang-link">தமிழ்</a>
-            <a href="#" class="lang-link">ગુજરાતી</a>
-            <a href="#" class="lang-link">ಕನ್ನಡ</a>
-            <a href="#" class="lang-link">മലയാളം</a>
-            <a href="#" class="lang-link">ਪੰਜਾਬੀ</a>
+        <!-- Languages -->
+        <div class="languages">
+            <span>Google offered in:</span>
+            <a href="#">हिन्दी</a>
+            <a href="#">বাংলা</a>
+            <a href="#">తెలుగు</a>
+            <a href="#">मराठी</a>
+            <a href="#">தமிழ்</a>
+            <a href="#">ગુજરાતી</a>
+            <a href="#">ಕನ್ನಡ</a>
+            <a href="#">മലയാളം</a>
+            <a href="#">ਪੰਜਾਬੀ</a>
         </div>
-    </main>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <div class="footer">
         <div class="footer-top">
-            <span class="country">India</span>
+            <span>India</span>
         </div>
         <div class="footer-bottom">
             <div class="footer-left">
-                <a href="#" class="footer-link">Advertising</a>
-                <a href="#" class="footer-link">Business</a>
-                <a href="#" class="footer-link">How Search works</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
             </div>
             <div class="footer-right">
-                <a href="#" class="footer-link">Privacy</a>
-                <a href="#" class="footer-link">Terms</a>
-                <a href="#" class="footer-link">Settings</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
             </div>
         </div>
-    </footer>
+    </div>
 </body>
 </html>
