@@ -1,0 +1,405 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #202124;
+    background-color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    padding: 6px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #202124;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 5px;
+    display: inline-block;
+    line-height: 24px;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.apps-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.apps-menu:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+.apps-icon {
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main Content */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: -60px;
+}
+
+/* Google Logo */
+.logo-container {
+    margin-bottom: 35px;
+}
+
+.google-logo {
+    height: 92px;
+    width: 272px;
+}
+
+/* Search Container */
+.search-container {
+    width: 100%;
+    max-width: 584px;
+    margin-bottom: 35px;
+}
+
+.search-box {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    transition: box-shadow 0.2s ease-in-out;
+    position: relative;
+}
+
+.search-box:hover {
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.search-box:focus-within {
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #9aa0a6;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #202124;
+    background: transparent;
+    height: 34px;
+    padding: 0;
+}
+
+.voice-search, .camera-search {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice-icon, .camera-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Search Buttons */
+.search-buttons {
+    margin-bottom: 35px;
+    display: flex;
+    gap: 14px;
+}
+
+.search-btn, .lucky-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 20px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search-btn:hover, .lucky-btn:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.search-btn:focus, .lucky-btn:focus {
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+/* Language Section */
+.language-section {
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.offered-text {
+    color: #202124;
+}
+
+.lang-link {
+    color: #1a0dab;
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+.lang-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #f2f2f2;
+    margin-top: auto;
+}
+
+.footer-top {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.country {
+    color: #70757a;
+    font-size: 15px;
+}
+
+.footer-bottom {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-link {
+    color: #70757a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        padding: 0 8px;
+    }
+    
+    .nav-link {
+        margin-right: 8px;
+    }
+    
+    .main {
+        padding: 0 8px;
+    }
+    
+    .search-container {
+        max-width: 100%;
+    }
+    
+    .search-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-left, .footer-right {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .language-section {
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .google-logo {
+        height: 56px;
+        width: 166px;
+    }
+    
+    .search-box {
+        height: 40px;
+        padding: 0 16px;
+    }
+    
+    .search-input {
+        font-size: 16px;
+    }
+    
+    .nav-right {
+        gap: 8px;
+    }
+    
+    .apps-menu {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .apps-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* AI Mode Button (if needed) */
+.ai-mode {
+    display: none;
+}
+
+/* Additional hover effects for better UX */
+.search-box:hover .search-icon svg {
+    fill: #202124;
+}
+
+.voice-search:hover, .camera-search:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+    border-radius: 50%;
+}
+
+/* Focus styles for accessibility */
+.search-input:focus {
+    outline: none;
+}
+
+.nav-link:focus {
+    outline: 2px solid #4285f4;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.footer-link:focus {
+    outline: 2px solid #4285f4;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.lang-link:focus {
+    outline: 2px solid #4285f4;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Animation for smooth transitions */
+* {
+    transition: all 0.1s ease-in-out;
+}
+
+.search-box {
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.search-btn, .lucky-btn {
+    transition: box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+}
