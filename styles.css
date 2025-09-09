@@ -1,0 +1,159 @@
+/* Basic CSS for Google Homepage Clone */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Top Navigation */
+.top-nav {
+    padding: 15px 20px;
+    text-align: right;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.top-nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* Google Logo */
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 272px;
+    height: 92px;
+}
+
+/* Search Box */
+.search-container {
+    margin-bottom: 30px;
+}
+
+.search-box {
+    width: 500px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box:hover {
+    border-color: #ccc;
+}
+
+.search-box:focus {
+    border-color: #4285f4;
+}
+
+/* Buttons */
+.buttons {
+    margin-bottom: 30px;
+}
+
+.buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    border-color: #dadce0;
+    background-color: #f8f9fa;
+}
+
+/* Languages */
+.languages {
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
+.languages span {
+    color: #222;
+}
+
+.languages a {
+    color: #1a0dab;
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+.languages a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.footer-top {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    color: #70757a;
+    font-size: 15px;
+}
+
+.footer-bottom {
+    padding: 15px 30px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
+
+.footer a {
+    color: #70757a;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Clear floats */
+.top-nav:after,
+.footer-bottom:after {
+    content: "";
+    display: table;
+    clear: both;
+}
